@@ -1,0 +1,62 @@
+@import url("http://fonts.cdnfonts.com/css/gt-walsheim");
+
+html,
+body {
+  background-color: #181818;
+  color: rgb(226, 232, 240);
+  font-family: "GT Walsheim", sans-serif;
+  overflow-x: hidden;
+}
+
+.rgb-text {
+  color: transparent;
+  background-image: linear-gradient(
+    to left,
+    #2ecc71,
+    #3498db,
+    #9b59b6,
+    #f39c12
+  );
+  -webkit-background-clip: text;
+  animation: animate 8s linear infinite;
+  background-size: 500%;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 100%;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+  0% {
+    background-position: 0 100%;
+  }
+}
+
+@layer base {
+  h1 {
+    @apply text-5xl sm:text-6xl md:text-7xl;
+  }
+
+  h2 {
+    @apply text-3xl sm:text-4xl;
+  }
+
+  li {
+    @apply cursor-pointer;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
