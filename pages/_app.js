@@ -3,6 +3,7 @@ import { AnimatePresence } from "framer-motion";
 import App from "next/app";
 import React from "react";
 import Navbar from "../components/Navbar";
+import Head from "next/head";
 
 class MyApp extends App {
   render() {
