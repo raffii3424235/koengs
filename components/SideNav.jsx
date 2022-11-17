@@ -14,25 +14,25 @@ const SideNav = ({ toHandleNav, toSetNav }) => {
       </div>
       <div className="pt-10 flex flex-col">
         <ul className="space-y-8 text-base text-center font-semibold tracking-wider">
-          <li className="hover:text-[#5651e5] ease-in-out duration-300">
+          <li className="hover:text-[#1da765] ease-in-out duration-300">
             <Link onClick={toSetNav} href="/">
               Home
             </Link>
           </li>
-          <motion.li className="hover:text-[#5651e5] ease-in-out duration-300">
+          <motion.li className="hover:text-[#1da765] ease-in-out duration-300">
             <Link onClick={toSetNav} href="/about">
               About
             </Link>
           </motion.li>
-          <motion.li className="hover:text-[#5651e5] ease-in-out duration-300">
+          <motion.li className="hover:text-[#1da765] ease-in-out duration-300">
             <Link onClick={toSetNav} href="/skills">
               Skills
             </Link>
           </motion.li>
-          <motion.li className="hover:text-[#5651e5] ease-in-out duration-300">
+          <motion.li className="hover:text-[#1da765] ease-in-out duration-300">
             <Link href="/">Projects</Link>
           </motion.li>
-          <motion.li className="hover:text-[#5651e5] ease-in-out duration-300">
+          <motion.li className="hover:text-[#1da765] ease-in-out duration-300">
             <Link href="/">Contact</Link>
           </motion.li>
         </ul>

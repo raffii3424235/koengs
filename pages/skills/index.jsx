@@ -62,29 +62,31 @@ const Skills = () => {
       id="skills"
       className="w-full lg:h-screen p-2"
     >
-      <div className="max-w-7xl mx-auto flex flex-col justify-center h-full py-16 px-4 lg:px-3">
+      <div className="max-w-7xl mx-auto flex flex-col justify-center h-full py-16 px-4 lg:px-2">
         <motion.h2 variants={fadeInUp} className="py-4 mb-4 text-center">
           What I Can Do
         </motion.h2>
         <motion.div
           variants={stagger}
-          className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8"
+          className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8"
         >
           {data.map((e, index) => (
             <motion.div
               variants={fadeInRight}
               whileHover={{ scale: 1.05 }}
               key={index}
-              className="bg-[#5651e5] select-none py-8 rounded-lg"
+              className="bg-[#232826] select-none rounded-lg"
             >
-              <motion.div className="grid gap-4 justify-center items-center">
-                <motion.div className="mx-auto">
-                  <Image src={e.img} width="80" height="80" alt={e.alt} />
+              <div className="py-6 saturate-100 hover:saturate-100 ease-linear duration-150 sm:saturate-0">
+                <motion.div className="grid gap-2 justify-center items-center">
+                  <motion.div className="mx-auto">
+                    <Image src={e.img} width="70" height="70" alt={e.alt} />
+                  </motion.div>
+                  <div className="flex flex-col items-center ">
+                    <h3 className="text-lg font-bold">{e.title}</h3>
+                  </div>
                 </motion.div>
-                <div className="flex flex-col items-center ">
-                  <h3 className="text-xl font-bold">{e.title}</h3>
-                </div>
-              </motion.div>
+              </div>
             </motion.div>
           ))}
         </motion.div>

@@ -65,20 +65,20 @@ export const Navbar = () => {
         </Link>
         <div>
           <ul className="hidden md:flex space-x-10 text-sm font-semibold tracking-wider">
-            <li className="hover:text-[#5651e5] ease-in-out duration-300">
+            <li className="hover:text-[#1da765] ease-in-out duration-300">
               <Link href="/">Home</Link>
             </li>
-            <li className="hover:text-[#5651e5] ease-in-out duration-300">
+            <li className="hover:text-[#1da765] ease-in-out duration-300">
               <Link href="/about">About</Link>
             </li>
-            <li className="hover:text-[#5651e5] ease-in-out duration-300">
+            <li className="hover:text-[#1da765] ease-in-out duration-300">
               <Link href="/skills">Skills</Link>
             </li>
-            <li className="hover:text-[#5651e5] ease-in-out duration-300">
-              <Link href="/">Projects</Link>
+            <li className="hover:text-[#1da765] ease-in-out duration-300">
+              <Link href="/projects">Projects</Link>
             </li>
-            <li className="hover:text-[#5651e5] ease-in-out duration-300">
-              <Link href="/">Contact</Link>
+            <li className="hover:text-[#1da765] ease-in-out duration-300">
+              <Link href="/contact">Contact</Link>
             </li>
           </ul>
           <div className={nav ? "hidden" : "md:hidden cursor-pointer"}>

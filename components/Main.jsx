@@ -8,6 +8,8 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
+import Image from "next/image";
+const heroBg = require("../public/image/hero-bg.png");
 
 let easing = [0.6, -0.05, 0.01, 0.99];
 
@@ -54,10 +56,13 @@ const Main = () => {
       animate="animate"
       exit={{ opacity: 0 }}
       id="home"
-      className="w-full h-screen text-center select-none"
+      className="w-full h-screen text-center select-none relative overflow-hidden"
     >
+      {/* <div className="absolute opacity-20">
+        <Image src={heroBg} alt="heroBg" />
+      </div> */}
       <div className="max-w-7xl w-full h-full mx-auto p-2 justify-center items-center flex ">
-        <div className="space-y-2">
+        <div className="space-y-2 z-10">
           <motion.div variants={stagger}>
             <motion.p
               variants={fadeInUp}
@@ -73,7 +78,7 @@ const Main = () => {
             </motion.h1>
             <motion.p
               variants={fadeInUp}
-              className="font-semibold py-4 text-lg text-slate-300 m-auto sm:max-w-[70%]"
+              className="font-medium py-4 text-lg text-slate-300 m-auto sm:max-w-[70%]"
             >
               I&#39;m foucused on building responsive front-end web application
               while learning back-end technologies.
@@ -88,7 +93,7 @@ const Main = () => {
                   variants={fadeInUp}
                 >
                   <FaLinkedinIn
-                    className="cursor-pointer hover:text-[#5651e5] ease-in-out duration-300"
+                    className="cursor-pointer hover:text-[#1da765] ease-in-out duration-300"
                     size={30}
                   />
                 </motion.div>
@@ -99,7 +104,7 @@ const Main = () => {
                   variants={fadeInUp}
                 >
                   <FaGithub
-                    className="cursor-pointer hover:text-[#5651e5] ease-in-out duration-300"
+                    className="cursor-pointer hover:text-[#1da765] ease-in-out duration-300"
                     size={30}
                   />
                 </motion.div>
@@ -110,7 +115,7 @@ const Main = () => {
                   variants={fadeInUp}
                 >
                   <FaTiktok
-                    className="cursor-pointer hover:text-[#5651e5] ease-in-out duration-300"
+                    className="cursor-pointer hover:text-[#1da765] ease-in-out duration-300"
                     size={30}
                   />
                 </motion.div>
@@ -121,7 +126,7 @@ const Main = () => {
                   variants={fadeInUp}
                 >
                   <FaTwitter
-                    className="cursor-pointer hover:text-[#5651e5] ease-in-out duration-300"
+                    className="cursor-pointer hover:text-[#1da765] ease-in-out duration-300"
                     size={30}
                   />
                 </motion.div>
@@ -132,7 +137,7 @@ const Main = () => {
                   variants={fadeInUp}
                 >
                   <FaInstagram
-                    className="cursor-pointer hover:text-[#5651e5] ease-in-out duration-300"
+                    className="cursor-pointer hover:text-[#1da765] ease-in-out duration-300"
                     size={30}
                   />
                 </motion.div>

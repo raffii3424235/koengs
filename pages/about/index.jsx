@@ -96,7 +96,7 @@ const About = () => {
               whileHover={{ x: 10 }}
               whileTap={{ scale: 1.03 }}
               variants={fadeInUp}
-              className="text-[#5651e5] text-lg py-4 cursor-pointer font-semibold flex items-center"
+              className="text-[#1da765] text-lg py-4 cursor-pointer font-semibold flex items-center"
             >
               Check Out Some Projects <FaArrowRight className="pl-2 text-xl" />
             </motion.p>
