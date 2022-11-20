@@ -27,7 +27,7 @@ const Login = () => {
             Get Started
           </button>
         </div>
-        <footer className="items-center py-5 text-center bottom-0 left-0 right-0">
+        <footer className="items-center py-5 text-center left-0 right-0">
           <p className="mt-10 text-xs font-medium">
             Powered by <span className="font-bold text-base">kungs</span>
           </p>
