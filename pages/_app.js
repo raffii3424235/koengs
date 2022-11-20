@@ -3,7 +3,6 @@ import { AnimatePresence } from "framer-motion";
 import App from "next/app";
 import React from "react";
 import Navbar from "../components/Navbar";
-import Head from "next/head";
 
 class MyApp extends App {
   render() {
@@ -11,7 +10,7 @@ class MyApp extends App {
 
     return (
       <AnimatePresence exitBeforeEnter>
-        {/* <Navbar /> */}
+        <Navbar />
         <Component {...pageProps} key={router.route} />;
       </AnimatePresence>
     );
