@@ -11,7 +11,7 @@ class MyApp extends App {
 
     return (
       <AnimatePresence exitBeforeEnter>
-        <Navbar />
+        {/* <Navbar /> */}
         <Component {...pageProps} key={router.route} />;
       </AnimatePresence>
     );

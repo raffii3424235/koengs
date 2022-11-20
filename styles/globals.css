@@ -1,11 +1,15 @@
 /* @import url("http://fonts.cdnfonts.com/css/gt-walsheim"); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
 
 html,
 body {
   background-color: #181818;
   color: rgb(226, 232, 240);
-  font-family: "Outfit", sans-serif;
+  /* font-family: "Outfit", sans-serif; */
   overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
 }
 
 .rgb-text {
@@ -31,6 +35,41 @@ body {
   }
   0% {
     background-position: 0 100%;
+  }
+}
+
+.bg-smoothly-move {
+  background-image: url("../public/image/dark-bg.jpeg");
+  background-position: 0px 0px;
+  width: 100%;
+  height: 100%;
+  background-repeat: repeat-x repeat-y;
+  animation: 20s linear 3s infinite alternate mymove;
+}
+
+@keyframes mymove {
+  0% {
+    background-position: 0 0;
+  }
+
+  20% {
+    background-position: top 30% right 20%;
+  }
+
+  40% {
+    background-position: top 70% right 30%;
+  }
+
+  60% {
+    background-position: bottom 10% left 30%;
+  }
+
+  80% {
+    background-position: bottom 40% left 20%;
+  }
+
+  100% {
+    background-position: top 10% left 50%;
   }
 }
 
