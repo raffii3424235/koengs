@@ -5,7 +5,7 @@ export const Heads = () => {
     <Head>
       <title>Kungs-Portfolio-Website</title>
       <meta name="description" content="A Portfolio Website" />
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/logo.png" />
       <link
         href="https://api.fontshare.com/v2/css?f[]=outfit@400,900,800,300,500,600,200,100,700&display=swap"
         rel="stylesheet"
