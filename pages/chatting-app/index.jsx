@@ -1,31 +1,48 @@
-import Image from "next/image";
-const logo = require("../../public/logo.png");
+import { useState } from "react";
+import LoginWindow from "../../components/LoginWindow";
 
 const Login = () => {
+  const [open, setOpen] = useState(false);
+
+  const newWindowLogin = () => {
+    setOpen(!open);
+  };
+
   return (
-    <div className="w-ful h-screen text-black overflow-hidden">
-      <div className="flex justify-center bg-smoothly-move h-3/5">
-        {/* <div className="py-8 grid grid-cols-2 items-center">
-          <div className="bg-[#421072] rounded-full rounded-bl-none h-[150px] w-[150px] mx-3 my-3"></div>
-          <div className="bg-[#6b1cb6] rounded-full h-[150px] w-[150px] mx-3 my-3"></div>
-          <div className="bg-[#6b1cb6] rounded-full h-[150px] w-[150px] mx-3 my-3"></div>
-          <div className="bg-[#421072] rounded-full rounded-br-none h-[150px] w-[150px] mx-3 my-3"></div>
-        </div> */}
-        {/* <div className="py-12">
-          <Image className="" src={logo} width={300} height={300} alt="logo" />
-        </div> */}
-      </div>
-      <div className="bg-slate-50 rounded-t-3xl h-screen">
-        <div className="text-center pt-8 px-12">
+    <div className="w-full h-screen grid grid-rows-2 bg-smoothly-move text-black overflow-hidden">
+      <div className="row-span-2"></div>
+      <div className="bg-slate-50 rounded-t-3xl bottom-0`">
+        <div className="text-center mt-10 mx-6">
           <h1 className="text-xl leading-tight">
             Enjoy the new experience of chatting with global friend
           </h1>
           <p className="text-sm py-2 text-gray-400">
             Connect people arround the word for free
           </p>
-          <button className="mt-6 bg-[#6b1cb6] py-4 px-16 rounded-lg text-sm text-white font-semibold">
+          <button
+            onClick={() => newWindowLogin()}
+            className="mt-6 bg-[#6b1cb6] py-4 px-24 rounded-lg text-sm text-white font-semibold"
+          >
             Get Started
           </button>
+        </div>
+        <div
+          className={
+            open
+              ? "ease-linear duration-500"
+              : "hidden translate-x-full translate-y-full ease-linear duration-500"
+          }
+        >
+          <div
+            onClick={() => setOpen(false)}
+            className={
+              open
+                ? "fixed left-0 top-0 w-full h-screen ease-linear duration-500 bg-black/50"
+                : "ease-linear duration-500 hidden fixed h-screen"
+            }
+          >
+            <LoginWindow close={() => setOpen(false)} />
+          </div>
         </div>
         <footer className="items-center py-5 text-center left-0 right-0">
           <p className="mt-10 text-xs font-medium">
