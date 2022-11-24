@@ -1,5 +1,6 @@
 import { FaGoogle, FaFacebook, FaApple, FaPhoneAlt } from "react-icons/fa";
 import { CgClose } from "react-icons/cg";
+import Link from "next/link";
 
 const LoginWindow = ({ close }) => {
   return (
@@ -16,10 +17,12 @@ const LoginWindow = ({ close }) => {
             Choose your login option
           </h2>
           <div className="pt-6 space-y-4">
-            <div className="bg-slate-100 py-2 flex items-center justify-center space-x-1 rounded-sm px-3 outline outline-1 outline-gray-200">
-              <FaGoogle size={16} />
-              <p className="text-xs font-medium">Continue with Google</p>
-            </div>
+            <Link href="/chatting-app/conversation">
+              <div className="bg-slate-100 py-2 flex items-center justify-center space-x-1 rounded-sm px-3 outline outline-1 outline-gray-200">
+                <FaGoogle size={16} />
+                <p className="text-xs font-medium">Continue with Google</p>
+              </div>
+            </Link>
             <div className="bg-slate-100 py-2 flex items-center justify-center space-x-1 rounded-sm px-3 outline outline-1 outline-gray-200">
               <FaFacebook size={16} />
               <p className="text-xs font-medium">Continue with Facebook</p>

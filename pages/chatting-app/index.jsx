@@ -40,9 +40,8 @@ const Login = () => {
                 ? "fixed left-0 top-0 w-full h-screen ease-linear duration-500 bg-black/50"
                 : "ease-linear duration-500 hidden fixed h-screen"
             }
-          >
-            <LoginWindow close={() => setOpen(false)} />
-          </div>
+          ></div>
+          <LoginWindow close={() => setOpen(false)} />
         </div>
         <footer className="items-center py-5 text-center left-0 right-0">
           <p className="mt-10 text-xs font-medium">
