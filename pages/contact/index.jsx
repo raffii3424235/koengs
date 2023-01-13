@@ -51,6 +51,8 @@ const stagger = {
 };
 
 const Contact = () => {
+  Contact.title = "Kungs - Contact";
+
   return (
     <motion.div
       initial="initial"

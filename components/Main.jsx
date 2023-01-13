@@ -98,7 +98,7 @@ const Main = () => {
                   />
                 </motion.div>
               </Link>
-              <Link href="/">
+              <Link href="https://github.com/kungs66" passHref>
                 <motion.div
                   whileHover={{ rotate: 15, scale: 1.2 }}
                   variants={fadeInUp}
@@ -131,7 +131,7 @@ const Main = () => {
                   />
                 </motion.div>
               </Link>
-              <Link href="/">
+              <Link href="https://instagram.com/rfrzal">
                 <motion.div
                   whileHover={{ rotate: 15, scale: 1.2 }}
                   variants={fadeInUp}

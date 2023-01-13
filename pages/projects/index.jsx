@@ -53,6 +53,8 @@ const stagger = {
 };
 
 const Projects = () => {
+  Projects.title = "Kungs - Projects";
+
   return (
     <motion.div
       initial="initial"
