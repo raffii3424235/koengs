@@ -54,6 +54,7 @@ const stagger = {
 };
 
 const About = () => {
+  About.title = "Kungs - About";
   return (
     <motion.div
       initial="initial"
