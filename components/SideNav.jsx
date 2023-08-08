@@ -30,10 +30,10 @@ const SideNav = ({ toHandleNav, toSetNav }) => {
             </Link>
           </motion.li>
           <motion.li className="hover:text-[#1da765] ease-in-out duration-300">
-            <Link href="/">Projects</Link>
+            <Link href="/projects">Projects</Link>
           </motion.li>
           <motion.li className="hover:text-[#1da765] ease-in-out duration-300">
-            <Link href="/">Contact</Link>
+            <Link href="/contact">Contact</Link>
           </motion.li>
         </ul>
       </div>
